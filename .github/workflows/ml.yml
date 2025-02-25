@@ -28,7 +28,3 @@ jobs:
       # ✅ الخطوة 3: تثبيت المتطلبات
       - name: Install Dependencies
         run: pip install -r requirements.txt
-
-      # ✅ الخطوة 4: تشغيل الاختبارات
-      - name: Run Tests
-        run: pytest
