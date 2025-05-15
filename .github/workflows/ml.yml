@@ -15,16 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # ✅ الخطوة 1: احضر الكود من GitHub
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # ✅ الخطوة 2: إعداد بيئة Python
       - name: Set Up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
-      # ✅ الخطوة 3: تثبيت المتطلبات
       - name: Install Dependencies
         run: pip install -r requirements.txt
